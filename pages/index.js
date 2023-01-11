@@ -11,7 +11,7 @@ export default function Home() {
     <div className='mbc'>
       <Head>
         <title>Creative Corner</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Software Application Development | Graphics Designing | Poster Designing | Digital Marketing | Photography | Videography" />
         <link rel="icon" href="/fav.png" />
       </Head>
     <Main />
