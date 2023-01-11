@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React from 'react'
 
 const footer = () => {
@@ -11,16 +12,16 @@ const footer = () => {
                     </a>
                     <ul className="flex flex-wrap justify-between items-center mb-6  text-gray-800 sm:mb-0 dark:text-gray-800">
                         <li>
-                            <a href="#" className="mr-4 hover:underline md:mr-6 ">About</a>
+                            <Link href="#" className="mr-4 hover:underline md:mr-6 ">About</Link>
                         </li>
                         <li>
-                            <a href="#" className="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+                            <Link href="#" className="mr-4 hover:underline md:mr-6">Privacy Policy</Link>
                         </li>
                         <li>
-                            <a href="#" className="mr-4 hover:underline md:mr-6 ">Licensing</a>
+                            <Link href="#" className="mr-4 hover:underline md:mr-6 ">Licensing</Link>
                         </li>
                         <li>
-                            <a href="#" className="hover:underline">Contact</a>
+                            <Link href="#" className="hover:underline">Contact</Link>
                         </li>
                     </ul>
                 </div>
