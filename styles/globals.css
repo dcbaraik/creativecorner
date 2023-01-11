@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  font-family: 'Raleway', sans-serif;
+}
+
+@layer base {
+  /* body {
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+  } */
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl font-[Raleway]
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl
+  }
+  
+  li {
+    @apply cursor-pointer
+  }
+
+  button {
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+  }
+}
+a{
+  color: unset!important;
+  text-decoration: unset !important;
+}
+/* .hc{
+  background-image: url("https://source.unsplash.com/random/900×700/?technology,programming,hacking");
+  padding: 24px;
+} */
+body {
+	background: linear-gradient(-45deg, #213e3b, #a6f6f1, #41aea9, #e8ffff);
+	background-size: 400% 400%;
+	animation: gradient 4s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+  100% {
+		background-position: 100% 0%;
+	}
+}
+.hc, .bgc{
+  padding: 44px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;;
+}
+.pcc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pcc div{
+  width:50%;
+}
+.carousel-indicators{
+  background-color: white !important;
+  padding: 16px !important;
+  border-radius: 10px !important;
+}
+.mbc{
+  margin-bottom: 424px;
+}
+@media(max-width:600px){
+  .mbc{
+    margin-bottom: 34px;
+  }
+  .pccmin{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pcc div{
+    width:100%;
+  }
+}
+.logo{
+  width: 124px;
+  height: auto;
+}
+.cctext{
+  color: white !important;
+}
+
+@media(min-width:900px){
+  .pcc div{
+    width:320px;
+  }
+}
